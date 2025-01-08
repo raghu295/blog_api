@@ -44,12 +44,12 @@ This is a simple blog application API built with Flask, SQLAlchemy, and PostgreS
 
 ## API Endpoints
 
-1. **User Authentication**
+1.**User Authentication**
 **Register:**
 
-URL: /register
-Method: POST
-Body
+- URL: /register
+- Method: POST
+- Body:
 {
     "username": "testuser",
     "email": "testuser@example.com",
@@ -57,45 +57,45 @@ Body
 }
 
 **Login:**
-URL: /login
-Method: POST
-Body:
+- URL: /login
+- Method: POST
+- Body:
 {
     "email": "testuser@example.com",
     "password": "password123"
 }
 
 **Logout:**
-URL: /logout
-Method: POST
+- URL: /logout
+- Method: POST
 
-**Blog Posts**
+2.**Blog Posts**
 **Get all posts with pagination:**
-URL: /posts?page=1
-Method: GET
+- URL: /posts?page=1
+- Method: GET
 
 **Get a single post:**
-URL: /post/post_id
-Method: GET
+- URL: /post/post_id
+- Method: GET
 
 **Create a new post:**
-URL: /post
-Method: POST
-Body
+- URL: /post
+- Method: POST
+- Body:
 {
     "title": "My First Post",
     "content": "This is the content of my first post."
 }
 
 **Update a post:**
-URL: /post/post_id
-Method: PUT
-Body:
+- URL: /post/post_id
+- Method: PUT
+- Body:
 {
     "title": "Updated Post Title",
     "content": "This is the updated content of the post."
 }
 
 **Delete a post:**
-URL: /post/post_id
-Method: DELETE
+- URL: /post/post_id
+- Method: DELETE
